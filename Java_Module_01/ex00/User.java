@@ -1,9 +1,7 @@
-
+import java.
 public class User{
     private Integer id;
     private String name;
-    private Integer balance;
-    private String getTransferType;
 
     public void setID(Integer id){
         this.id = id;
@@ -21,23 +19,9 @@ public class User{
         return this.name;
     }
 
-    public void setBalance(Integer balance){
-        this.balance = balance;
+    public int generateId(){
+        r
     }
-
-    public Integer getBalance(){
-        return this.balance;
-    }
-
-    public void setTransferType(String type){
-        this.getTransferType = type;
-
-    }
-
-    public String getTransferType(){
-        return this.getTransferType;
-    }
-
     public void printConsole(){
         System.out.format("\nID: %d\nNmae: %s\nBalance: %d", this.id, this.name, this.balance);
     }
